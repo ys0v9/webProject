@@ -15,17 +15,6 @@ body {
     padding-top: 100px;
 }
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 .campaign {
     width: 100%;
     max-width: 1200px;
@@ -36,7 +25,6 @@ body {
     backdrop-filter: blur(10px);
     margin: 0 auto;
     margin-top: 20px;
-    animation: fadeInUp 1s ease-out;
 }
 
 .methods-title {
@@ -49,7 +37,6 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: fadeInUp 1s ease-out 0.2s both;
 }
 
 .campaign-table {
@@ -60,7 +47,6 @@ body {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    animation: fadeInUp 1s ease-out 0.4s both;
 }
 
 .campaign-table thead {
@@ -135,7 +121,6 @@ body {
 .campaign-apply {
     text-align: center;
     margin: 40px 0;
-    animation: fadeInUp 1s ease-out 0.6s both;
 }
 
 #applyBtn {
@@ -200,10 +185,6 @@ body {
 }
 
 /* 캠페인 중요성 섹션 */
-.info-section {
-    animation: fadeInUp 1s ease-out 0.8s both;
-}
-
 .info-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -241,10 +222,6 @@ body {
 }
 
 /* 참여 가이드 섹션 */
-.participation-guide {
-    animation: fadeInUp 1s ease-out 1s both;
-}
-
 .guide-steps {
     display: flex;
     flex-direction: column;
@@ -293,10 +270,6 @@ body {
 }
 
 /* 성공 사례 섹션 */
-.success-stories {
-    animation: fadeInUp 1s ease-out 1.2s both;
-}
-
 .stories-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -351,10 +324,6 @@ body {
 }
 
 /* 동기부여 섹션 */
-.motivation-section {
-    animation: fadeInUp 1s ease-out 1.4s both;
-}
-
 .motivation-content {
     display: flex;
     gap: 40px;
