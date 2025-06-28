@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>초록약속</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+
+                <div class="logo" id="logo">
+                    <div class="logo-img">
+                        <img src="../images/forest.png">
+                    </div>
+                    <span class="logo-text">초록약속</span>
+                </div>
+                
+                <nav class="nav">
+                    <a href="#" class="nav-link active" id="home">홈</a>
+                    <a href="#" class="nav-link" onclick="loadPage('climate.html')">기후위기란?</a>
+                    <a href="#" class="nav-link" onclick="loadPage('carbon.html')">탄소중립이란?</a>
+                    <a href="#" class="nav-link" onclick="loadPage('personal.html')">개인 실천법</a>
+                    <a href="#" class="nav-link" onclick="loadPage('campain.html')">캠페인 참여</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content" id="content">
+        <div id="home-page">
+            <section class="main-section">
+                <div class="container">
+                    <div class="main-content">
+                        <h1 class="main-title">
+                            지구를 위한
+                            <span class="highlight-text">행동</span>
+                        </h1>
+                        <p class="main-subtitle">
+                            기후위기는 현실입니다. 하지만 우리에게는 아직 희망이 있습니다.
+                            탄소중립을 통해 지구의 미래를 바꿔나가세요.
+                        </p>
+
+                        <div class="main-buttons">
+                            <button class="button btn-primary" onclick="navigateToPage('campaign')">캠페인 참여하기</button>
+                            <button class="button btn-secondary" onclick="navigateToPage('personal-action')">실천법 알아보기</button>
+                        </div>
+
+                        <div class="main-stats">
+                            <div class="stat">
+                                <div class="stat-number">1.5°C</div>
+                                <div class="stat-label">목표 온도 상승 제한</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">2050</div>
+                                <div class="stat-label">탄소중립 목표 연도</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">지금</div>
+                                <div class="stat-label">행동해야 할 때</div>
+                            </div>
+                        </div>
+
+                        <div class="main-cards">
+                            <div class="climate-card">
+                                <h2>기후위기란?</h2>
+                                <img src="../images/기후위기.jpg" alt="기후위기">
+                                <p>
+                                기후위기는 지구의 평균 기온이 급격히 상승하면서 생기는 이상 기후 현상입니다.
+                                폭염, 폭우, 가뭄, 산불 등 자연재해가 증가하고 있으며, 생태계와 인간의 삶에 큰 영향을 줍니다.
+                                </p>
+                                <a href="climate.html">자세히 보기 →</a>
+                            </div>
+                            <div class="carbon-card">
+                                <h2>탄소중립이란?</h2>
+                                <img src="../images/탄소중립.jpg" alt="탄소중립">
+                                <p>
+                                탄소중립은 우리가 배출하는 이산화탄소의 양을 0으로 만드는 것을 말합니다.
+                                즉, 배출한 만큼 흡수하거나 제거하여 지구 온난화를 막기 위한 노력입니다.
+                                </p>
+                                <a href="carbon.html">자세히 보기 →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <iframe id="contentFrame" src="" width="100%" height="1500vh" style="border:none; display:none;"></iframe>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <p>주소: 대구소프트웨어마이스터고등학교</p>
+                    <p>이메일: climateandcarbon@action.kr</p>
+                    <p>전화: 02-1234-5678</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Copyright 2025 초록약속 All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

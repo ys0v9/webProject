@@ -1,0 +1,443 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+    margin: 0;
+    padding-top: 100px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.campaign {
+    width: 100%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    margin: 0 auto;
+    margin-top: 20px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.methods-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1f2937;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.campaign-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+.campaign-table thead {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.campaign-table th {
+    padding: 20px 15px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+}
+
+.campaign-table th:nth-child(1) { width: 20%; }
+.campaign-table th:nth-child(2) { width: 35%; }
+.campaign-table th:nth-child(3) { width: 25%; }
+.campaign-table th:nth-child(4) { width: 20%; }
+
+.campaign-table td {
+    padding: 20px 15px;
+    text-align: center;
+    border-bottom: 1px solid #f3f4f6;
+    font-size: 0.9rem;
+    vertical-align: middle;
+}
+
+.campaign-table td:nth-child(1) { 
+    font-weight: 600;
+    color: #374151;
+}
+
+.campaign-table td:nth-child(2) { 
+    text-align: left;
+    padding-left: 20px;
+}
+
+.campaign-table td:nth-child(3) { 
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.campaign-table tbody tr {
+    transition: background 0.2s ease;
+}
+
+.campaign-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+.campaign-table tbody tr:nth-child(even) {
+    background: #f9fafb;
+}
+
+.campaign-table a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 16px;
+    border: 2px solid #667eea;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.campaign-table a:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.campaign-apply {
+    text-align: center;
+    margin: 40px 0;
+    animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+#applyBtn {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+    border: none;
+    padding: 16px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+}
+
+#applyBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(16, 185, 129, 0.4);
+}
+
+@media (max-width: 768px) {
+    body { 
+        padding: 10px; 
+        padding-top: 80px;
+    }
+    .campaign { 
+        padding: 20px; 
+        margin-top: 10px;
+    }
+    .methods-title { font-size: 2rem; }
+    .campaign-table th, .campaign-table td { padding: 12px 8px; }
+    .campaign-table td:nth-child(2) { padding-left: 12px; }
+}
+
+@media (max-width: 480px) {
+    .campaign-table { font-size: 0.8rem; }
+    .campaign-table th, .campaign-table td { padding: 10px 6px; }
+    .campaign-table a { padding: 6px 12px; font-size: 0.85rem; }
+    #applyBtn { padding: 12px 30px; font-size: 1rem; }
+}
+
+@media (max-width: 700px) {
+    .table-container { overflow-x: auto; }
+    .campaign-table { min-width: 600px; }
+}
+
+/* 추가 콘텐츠 스타일 */
+.campaign-info {
+    margin-top: 60px;
+}
+
+.info-section, .participation-guide, .success-stories, .motivation-section {
+    margin-bottom: 60px;
+}
+
+.info-section h3, .participation-guide h3, .success-stories h3, .motivation-section h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* 캠페인 중요성 섹션 */
+.info-section {
+    animation: fadeInUp 1s ease-out 0.8s both;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.info-card {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-8px);
+}
+
+.info-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.info-card h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+/* 참여 가이드 섹션 */
+.participation-guide {
+    animation: fadeInUp 1s ease-out 1s both;
+}
+
+.guide-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.step:hover {
+    transform: translateX(10px);
+}
+
+.step-number {
+    background: linear-gradient(135deg, #10b981, #14b8a6);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.step-content h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 10px;
+}
+
+.step-content p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+/* 성공 사례 섹션 */
+.success-stories {
+    animation: fadeInUp 1s ease-out 1.2s both;
+}
+
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.story-card {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.story-card:hover {
+    transform: translateY(-8px);
+}
+
+.story-image {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.story-card h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 15px;
+}
+
+.story-card p {
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.story-stats {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.story-stats span {
+    background: #f3f4f6;
+    color: #374151;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* 동기부여 섹션 */
+.motivation-section {
+    animation: fadeInUp 1s ease-out 1.4s both;
+}
+
+.motivation-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 40px;
+    border-radius: 20px;
+    color: white;
+}
+
+.motivation-text {
+    flex: 2;
+}
+
+.motivation-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.motivation-author {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.motivation-stats {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.motivation-stat {
+    text-align: center;
+}
+
+.motivation-stat .stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.motivation-stat .stat-label {
+    color: #e0e7ff;
+    font-size: 0.9rem;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .info-grid, .stories-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .step {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .step-number {
+        align-self: center;
+    }
+    
+    .motivation-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .motivation-stats {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .info-section h3, .participation-guide h3, .success-stories h3, .motivation-section h3 {
+        font-size: 1.5rem;
+    }
+    
+    .story-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>캠페인 신청</title>
+  <link rel="stylesheet" href="../css/popup.css" />
+</head>
+<body>
+  <div class="popup-content">
+    <span class="close">&times;</span>
+    <h3>캠페인 신청</h3>
+    <form id="campaignForm">
+      <label>이름: <input type="text" name="name" required></label>
+      <label>이메일: <input type="email" name="email" required></label>
+      <label>전화번호: <input type="tel" name="phone" placeholder="010-1111-1111" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" title="010-1111-1111 형식으로 입력해주세요" required></label>
+      <label>나이: <input type="number" name="age" required></label>
+      <label>성별:
+        <select name="gender" required>
+          <option value="">선택해주세요</option>
+          <option>남성</option>
+          <option>여성</option>
+          <option>기타</option>
+        </select>
+      </label>
+      <label>캠페인 종류:
+        <select name="type" required>
+          <option value="">선택해주세요</option>
+          <option>RE100 캠페인</option>
+          <option>탄소 배출권 거래제 (K-ETS)</option>
+          <option>도시 숲 조성 및 나무 심기 캠페인</option>
+          <option>제로 웨이스트 운동</option>
+          <option>기후 행동 주간 (Climate Action Week)</option>
+          <option>2050 탄소중립 녹색성장위원회</option>
+        </select>
+      </label>
+      <button type="submit">신청하기</button>
+    </form>
+  </div>
+
+  <script src="../js/popup.js"></script>
+</body>
+</html>
