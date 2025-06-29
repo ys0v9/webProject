@@ -1,14 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
 const applyBtn = document.getElementById("applyBtn");
-const popup = document.getElementById("popupForm");
-const closeBtn = document.querySelector(".popup .close");
-const form = document.getElementById("campaignForm");
 
 // 팝업창 닫기 함수 (전역 함수로 등록)
 window.closePopup = function() {
-  if (popup) {
-    popup.classList.add("hidden");
-  }
+  // 팝업창 닫기 로직은 popup.js에서 처리됨
 };
 
 // 신청 버튼 클릭 시 팝업창 열기
@@ -37,23 +32,33 @@ applyBtn.addEventListener("click", function () {
   }
 });
 
-// 닫기 버튼 클릭 시 팝업 닫기
-closeBtn.addEventListener("click", function () {
-  popup.classList.add("hidden");
+// Command+R 또는 Ctrl+R 키 이벤트 리스너
+document.addEventListener('keydown', function(event) {
+    if ((event.metaKey || event.ctrlKey) && event.key === 'r') {
+        event.preventDefault();
+        window.location.reload();
+    }
 });
 
-// 팝업 바깥 클릭 시 닫기
-popup.addEventListener("click", function (e) {
-  if (e.target === popup) {
-    popup.classList.add("hidden");
-  }
-});
+// 캠페인 신청 버튼 클릭 이벤트
+document.addEventListener('DOMContentLoaded', function() {
+    // 모든 메뉴 항목에서 active 클래스 제거
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => link.classList.remove('active'));
+    
+    // 캠페인 참여 메뉴 활성화
+    const campaignLink = document.querySelector('.nav-link[href="campain.html"]');
+    if (campaignLink) {
+        campaignLink.classList.add('active');
+    }
 
-// 폼 제출 시 페이지 새로고침 방지 + 알림 후 팝업 닫기 + 폼 초기화
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-  alert("신청이 완료되었습니다!");
-  form.reset();
-  popup.classList.add("hidden");
+    // 캠페인 신청 버튼 이벤트
+    const applyBtn = document.getElementById('applyBtn');
+    if (applyBtn) {
+        applyBtn.addEventListener('click', function() {
+            // 팝업창 열기
+            window.open('popup.html', 'popup', 'width=400,height=500,scrollbars=yes,resizable=yes');
+        });
+    }
 });
 });

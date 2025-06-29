@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // fallback: 직접 닫기 시도
       window.close();
     }
-  });
+    });
 
   // 전화번호 자동 포맷팅
   phoneInput.addEventListener("input", function (e) {
@@ -24,13 +24,13 @@ document.addEventListener("DOMContentLoaded", function () {
       e.target.value = value.slice(0, 3) + '-' + value.slice(3);
     } else {
       e.target.value = value.slice(0, 3) + '-' + value.slice(3, 7) + '-' + value.slice(7, 11);
-    }
-  });
+        }
+    });
 
   // 폼 제출 시 처리
   form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    
+        e.preventDefault();
+        
     // 전화번호 형식 검증
     const phoneValue = phoneInput.value;
     const phonePattern = /^[0-9]{3}-[0-9]{4}-[0-9]{4}$/;
@@ -47,9 +47,9 @@ document.addEventListener("DOMContentLoaded", function () {
     
     // 신청 완료 알림
     alert("신청이 완료되었습니다!");
-    
+        
     // 폼 초기화
-    form.reset();
+        form.reset();
     
     // 팝업창 닫기
     if (window.parent && window.parent.closePopup) {
@@ -58,4 +58,4 @@ document.addEventListener("DOMContentLoaded", function () {
       window.close();
     }
   });
-}); 
+    });

@@ -1,162 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>기후위기란?</title>
     <link rel="stylesheet" href="../css/climate.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="climate-crisis">
+    <header class="header">
         <div class="container">
-            <div class="climate-header">
-                <h2 class="climate-title">기후위기란?</h2>
-                <p class="climate-subtitle">
-                    인간 활동으로 인한 온실가스 배출이 지구의 기후 시스템을 급격히 변화시키고 있습니다.
-                    이는 단순한 환경 문제가 아닌, 인류의 생존과 직결된 위기입니다.
-                </p>
-            </div>
-            
-            <div class="crisis-grid">
-                <div class="crisis-card" data-color="red">
-                    <div class="crisis-icon">📈</div>
-                    <div class="crisis-stat">+1.1°C</div>
-                    <h3 class="crisis-title">급격한 온도 상승</h3>
-                    <p class="crisis-description">지구 평균 기온이 산업혁명 이후 1.1°C 상승했으며, 매년 최고 기온 기록을 경신하고 있습니다.</p>
-                </div>
-                <div class="crisis-card" data-color="blue">
-                    <div class="crisis-icon">💧</div>
-                    <div class="crisis-stat">+21cm</div>
-                    <h3 class="crisis-title">해수면 상승</h3>
-                    <p class="crisis-description">북극과 남극의 빙하가 녹으면서 해수면이 지속적으로 상승하여 연안 지역이 위험에 처해있습니다.</p>
-                </div>
-                <div class="crisis-card" data-color="orange">
-                    <div class="crisis-icon">☀️</div>
-                    <div class="crisis-stat">3배 증가</div>
-                    <h3 class="crisis-title">극한 기후 현상</h3>
-                    <p class="crisis-description">폭염, 한파, 가뭄, 홍수 등 극한 기후 현상의 빈도와 강도가 지속적으로 증가하고 있습니다.</p>
-                </div>
-                <div class="crisis-card" data-color="green">
-                    <div class="crisis-icon">⚠️</div>
-                    <div class="crisis-stat">1000배</div>
-                    <h3 class="crisis-title">생태계 파괴</h3>
-                    <p class="crisis-description">기후변화로 인해 생물 종의 멸종 속도가 가속화되고 생태계 균형이 크게 흔들리고 있습니다.</p>
-                </div>
-            </div>
+            <div class="header-content">
 
-            <div class="crisis-impact">
-                <div class="impact-content">
-                    <h3 class="impact-title">기후변화의 현실</h3>
-                    <div class="impact-stats">
-                        <div class="impact-stat">
-                            <span class="impact-label">CO₂ 농도</span>
-                            <span class="impact-value red">421ppm (역대 최고)</span>
-                        </div>
-                        <div class="impact-stat">
-                            <span class="impact-label">지구 온도</span>
-                            <span class="impact-value orange">+1.1°C (1880년 대비)</span>
-                        </div>
-                        <div class="impact-stat">
-                            <span class="impact-label">북극 해빙 감소</span>
-                            <span class="impact-value blue">연간 13% 감소</span>
-                        </div>
-                        <div class="impact-stat">
-                            <span class="impact-label">종 멸종 속도</span>
-                            <span class="impact-value green">자연의 1000배</span>
-                        </div>
+                <div class="logo" id="logo">
+                    <div class="logo-img">
+                        <img src="../images/forest.png">
                     </div>
-                </div>
-                <div class="impact-visual">
-                    <div class="earth-icon">🌍</div>
-                    <p>지구는 지금 <strong>위험 신호</strong>를 보내고 있습니다</p>
-                </div>
-            </div>
-
-            <div class="hope-message">
-                <h3>하지만 아직 늦지 않았습니다</h3>
-                <p>과학자들은 1.5°C 온도 상승을 막기 위해 2030년까지 온실가스를 45% 줄여야 한다고 말합니다. 지금 행동하면 충분히 가능합니다.</p>
-                <button class="button btn-primary">해결책 알아보기</button>
-            </div>
-
-            <!-- 추가 콘텐츠 섹션 -->
-            <div class="additional-sections">
-                <div class="timeline-section">
-                    <h3>기후변화 타임라인</h3>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-date">1880년</div>
-                            <div class="timeline-content">
-                                <h4>산업혁명 시작</h4>
-                                <p>대량의 화석연료 사용으로 인한 온실가스 배출 증가</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-date">1950년</div>
-                            <div class="timeline-content">
-                                <h4>기후변화 관측 시작</h4>
-                                <p>과학자들이 지구 온도 상승 패턴을 관측하기 시작</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-date">1988년</div>
-                            <div class="timeline-content">
-                                <h4>IPCC 설립</h4>
-                                <p>기후변화에 관한 정부간 패널(IPCC) 설립</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-date">2015년</div>
-                            <div class="timeline-content">
-                                <h4>파리협정 체결</h4>
-                                <p>지구 평균 온도 상승을 2°C 이하로 제한하는 국제협정</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-date">2023년</div>
-                            <div class="timeline-content">
-                                <h4>기후 비상사태</h4>
-                                <p>지구 평균 온도가 이미 1.1°C 상승, 긴급한 행동 필요</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="solutions-section">
-                    <h3>기후위기 해결 방안</h3>
-                    <div class="solutions-grid">
-                        <div class="solution-card">
-                            <div class="solution-icon">🌍</div>
-                            <h4>국제 협력 강화</h4>
-                            <p>파리협정 이행과 국제 기후 기금 확대를 통해 개발도상국의 기후 대응을 지원하고 전 세계적 협력을 강화합니다.</p>
-                        </div>
-                        <div class="solution-card">
-                            <div class="solution-icon">🏛️</div>
-                            <h4>정책 및 제도 개선</h4>
-                            <p>탄소세 도입, 배출권 거래제 확대, 친환경 인증제도 강화를 통해 기후 친화적 정책 환경을 조성합니다.</p>
-                        </div>
-                        <div class="solution-card">
-                            <div class="solution-icon">💡</div>
-                            <h4>기술 혁신 투자</h4>
-                            <p>탄소 포집 저장(CCS), 수소 에너지, 차세대 배터리 기술 등 혁신 기술 개발에 대폭 투자합니다.</p>
-                        </div>
-                        <div class="solution-card">
-                            <div class="solution-icon">🎓</div>
-                            <h4>교육 및 인식 제고</h4>
-                            <p>기후변화 교육 의무화, 기업 ESG 경영 확산, 시민 참여 프로그램을 통해 기후 인식을 전면적으로 개선합니다.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="call-to-action">
-                    <h3>지금 당신이 할 수 있는 일</h3>
-                    <div class="action-buttons">
-                        <button class="action-btn primary">개인 실천법 알아보기</button>
-                        <button class="action-btn secondary">캠페인 참여하기</button>
-                    </div>
-                </div>
+                    <span class="logo-text">초록약속</span>
+                </div> 
+                
+                <nav class="nav">
+                    <a href="#" class="nav-link active" id="home">홈</a>
+                    <a href="climate.html" class="nav-link">기후위기란?</a>
+                    <p class="nav-link">탄소중립이란?</p>
+                    <p class="nav-link">개인 실천법</p>
+                    <a href="campain.html" class="nav-link">캠페인 참여</a>
+                </nav>
             </div>
         </div>
-    </section>
+    </header>
+
+    <main class="main-content">
+        <section class="climate-crisis">
+            <div class="container">
+                <div class="climate-header">
+                    <h2 class="climate-title">기후위기란?</h2>
+                    <p class="climate-subtitle">
+                        인간 활동으로 인한 온실가스 배출이 지구의 기후 시스템을 급격히 변화시키고 있습니다.
+                        이는 단순한 환경 문제가 아닌, 인류의 생존과 직결된 위기입니다.
+                    </p>
+                </div>
+                
+                <div class="crisis-grid">
+                    <div class="crisis-card" data-color="red">
+                        <div class="crisis-image">
+                            <img src="../images/high-temperature.png" alt="고온">
+                        </div>
+                        <div class="crisis-stat">+1.1°C</div>
+                        <h3 class="crisis-title">급격한 온도 상승</h3>
+                        <p class="crisis-description">지구 평균 기온이 산업혁명 이후 1.1°C 상승했으며, 매년 최고 기온 기록을 경신하고 있습니다.</p>
+                    </div>
+                    <div class="crisis-card" data-color="blue">
+                        <div class="crisis-image">
+                            <img src="../images/sea-level.png" alt="해수면 상승">
+                        </div>
+                        <div class="crisis-stat">+21cm</div>
+                        <h3 class="crisis-title">해수면 상승</h3>
+                        <p class="crisis-description">북극과 남극의 빙하가 녹으면서 해수면이 지속적으로 상승하여 연안 지역이 위험에 처해있습니다.</p>
+                    </div>
+                    <div class="crisis-card" data-color="orange">
+                        <div class="crisis-image">
+                            <img src="../images/sun.png" alt="극한 기후">
+                        </div>
+                        <div class="crisis-stat">3배 증가</div>
+                        <h3 class="crisis-title">극한 기후 현상</h3>
+                        <p class="crisis-description">폭염, 한파, 가뭄, 홍수 등 극한 기후 현상의 빈도와 강도가 지속적으로 증가하고 있습니다.</p>
+                    </div>
+                    <div class="crisis-card" data-color="green">
+                        <div class="crisis-image">
+                            <img src="../images/planet-earth.png" alt="생태계 파괴">
+                        </div>
+                        <div class="crisis-stat">1000배</div>
+                        <h3 class="crisis-title">생태계 파괴</h3>
+                        <p class="crisis-description">기후변화로 인해 생물 종의 멸종 속도가 가속화되고 생태계 균형이 크게 흔들리고 있습니다.</p>
+                    </div>
+                </div>
+
+                <div class="crisis-impact">
+                    <div class="impact-content">
+                        <h3 class="impact-title">기후변화의 현실</h3>
+                        <div class="impact-stats">
+                            <div class="impact-stat">
+                                <span class="impact-label">CO₂ 농도</span>
+                                <span class="impact-value red">421ppm (역대 최고)</span>
+                            </div>
+                            <div class="impact-stat">
+                                <span class="impact-label">지구 온도</span>
+                                <span class="impact-value orange">+1.1°C (1880년 대비)</span>
+                            </div>
+                            <div class="impact-stat">
+                                <span class="impact-label">북극 해빙 감소</span>
+                                <span class="impact-value blue">연간 13% 감소</span>
+                            </div>
+                            <div class="impact-stat">
+                                <span class="impact-label">종 멸종 속도</span>
+                                <span class="impact-value green">자연의 1000배</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="impact-visual">
+                        <div class="earth-icon">
+                            <img src="../images/save1.png" alt="지구 보호">
+                        </div>
+                        <p>지구는 지금 <strong>위험 신호</strong>를 보내고 있습니다</p>
+                    </div>
+                </div>
+
+                <div class="hope-message">
+                    <h3>하지만 아직 늦지 않았습니다</h3>
+                    <p>과학자들은 1.5°C 온도 상승을 막기 위해 2030년까지 온실가스를 45% 줄여야 한다고 말합니다. 지금 행동하면 충분히 가능합니다.</p>
+                </div>
+
+                <!-- 추가 콘텐츠 섹션 -->
+                <div class="additional-sections">
+                    <div class="timeline-section">
+                        <h3>기후변화 타임라인</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">1880년</div>
+                                <div class="timeline-content">
+                                    <h4>산업혁명 시작</h4>
+                                    <p>대량의 화석연료 사용으로 인한 온실가스 배출 증가</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">1950년</div>
+                                <div class="timeline-content">
+                                    <h4>기후변화 관측 시작</h4>
+                                    <p>과학자들이 지구 온도 상승 패턴을 관측하기 시작</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">1988년</div>
+                                <div class="timeline-content">
+                                    <h4>IPCC 설립</h4>
+                                    <p>기후변화에 관한 정부간 패널(IPCC) 설립</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2015년</div>
+                                <div class="timeline-content">
+                                    <h4>파리협정 체결</h4>
+                                    <p>지구 평균 온도 상승을 2°C 이하로 제한하는 국제협정</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2023년</div>
+                                <div class="timeline-content">
+                                    <h4>기후 비상사태</h4>
+                                    <p>지구 평균 온도가 이미 1.1°C 상승, 긴급한 행동 필요</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="solutions-section">
+                        <h3>기후위기 해결 방안</h3>
+                        <div class="solutions-grid">
+                            <div class="solution-card">
+                                <div class="solution-icon">
+                                    <img src="../images/international.png" alt="국제 협력">
+                                </div>
+                                <h4>국제 협력 강화</h4>
+                                <p>파리협정 이행과 국제 기후 기금 확대를 통해 개발도상국의 기후 대응을 지원하고 전 세계적 협력을 강화합니다.</p>
+                            </div>
+                            <div class="solution-card">
+                                <div class="solution-icon">
+                                    <img src="../images/policy1.png" alt="정책 제도">
+                                </div>
+                                <h4>정책 및 제도 개선</h4>
+                                <p>탄소세 도입, 배출권 거래제 확대, 친환경 인증제도 강화를 통해 기후 친화적 정책 환경을 조성합니다.</p>
+                            </div>
+                            <div class="solution-card">
+                                <div class="solution-icon">
+                                    <img src="../images/idea.png" alt="기술 혁신">
+                                </div>
+                                <h4>기술 혁신 투자</h4>
+                                <p>탄소 포집 저장(CCS), 수소 에너지, 차세대 배터리 기술 등 혁신 기술 개발에 대폭 투자합니다.</p>
+                            </div>
+                            <div class="solution-card">
+                                <div class="solution-icon">
+                                    <img src="../images/training.png" alt="교육 인식">
+                                </div>
+                                <h4>교육 및 인식 제고</h4>
+                                <p>기후변화 교육 의무화, 기업 ESG 경영 확산, 시민 참여 프로그램을 통해 기후 인식을 전면적으로 개선합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="call-to-action">
+                        <h3>지금 당신이 할 수 있는 일</h3>
+                        <div class="action-buttons">
+                            <button class="action-btn primary">개인 실천법 알아보기</button>
+                            <a href="campain.html" class="action-btn secondary">캠페인 참여하기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <p>주소: 대구소프트웨어마이스터고등학교</p>
+                    <p>이메일: climateandcarbon@action.kr</p>
+                    <p>전화: 02-1234-5678</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Copyright 2025 초록약속 All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
     <script src="../js/climate.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

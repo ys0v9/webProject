@@ -72,9 +72,15 @@ body {
     transform: translateY(-8px);
 }
 
-.crisis-icon {
-    font-size: 36px;
+.crisis-image {
     margin-bottom: 12px;
+    text-align: center;
+}
+
+.crisis-image img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
 }
 
 .crisis-stat {
@@ -167,8 +173,13 @@ body {
 }
 
 .earth-icon {
-    font-size: 64px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.earth-icon img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
 }
 
 .impact-visual p {
@@ -176,7 +187,6 @@ body {
     color: #333;
     font-weight: 500;
 }
-
 
 .hope-message {
     text-align: center;
@@ -198,7 +208,6 @@ body {
     margin-bottom: 20px;
     color: #444;
 }
-
 
 .button {
     padding: 12px 24px;
@@ -312,7 +321,7 @@ body {
 
 .solution-card {
     background: white;
-    padding: 30px 25px;
+    padding: 20px 15px;
     border-radius: 20px;
     text-align: center;
     box-shadow: 0 6px 20px rgba(0,0,0,0.1);
@@ -324,19 +333,30 @@ body {
 }
 
 .solution-icon {
-    font-size: 3rem;
     margin-bottom: 20px;
+    text-align: center;
+}
+
+.solution-icon img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.solution-card:hover .solution-icon img {
+    transform: scale(1.1);
 }
 
 .solution-card h4 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     color: #333;
     margin-bottom: 15px;
 }
 
 .solution-card p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #666;
     line-height: 1.6;
 }
@@ -370,6 +390,8 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .action-btn.primary {
@@ -395,7 +417,97 @@ body {
 }
 
 /* 반응형 디자인 */
+@media (max-width: 1024px) {
+    .crisis-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .crisis-impact {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .impact-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 768px) {
+    .container {
+        padding: 80px 15px;
+    }
+    
+    .climate-title {
+        font-size: 28px;
+    }
+    
+    .climate-subtitle {
+        font-size: 16px;
+    }
+    
+    .crisis-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .crisis-card {
+        height: auto;
+        padding: 20px;
+    }
+    
+    .crisis-image {
+        margin-bottom: 12px;
+        text-align: center;
+    }
+    
+    .crisis-image img {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+    }
+    
+    .crisis-stat {
+        font-size: 20px;
+    }
+    
+    .crisis-title {
+        font-size: 18px;
+    }
+    
+    .crisis-description {
+        font-size: 14px;
+    }
+    
+    .crisis-impact {
+        padding: 25px;
+        margin-bottom: 30px;
+    }
+    
+    .impact-title {
+        font-size: 20px;
+    }
+    
+    .impact-stat {
+        padding: 12px;
+    }
+    
+    .impact-value {
+        font-size: 16px;
+    }
+    
+    .hope-message {
+        padding: 25px 15px;
+    }
+    
+    .hope-message h3 {
+        font-size: 20px;
+    }
+    
+    .hope-message p {
+        font-size: 14px;
+    }
+    
     .timeline::before {
         left: 20px;
     }
@@ -422,12 +534,124 @@ body {
         gap: 20px;
     }
     
+    .solution-card {
+        padding: 20px 15px;
+    }
+    
+    .solution-icon img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .solution-card h4 {
+        font-size: 1.1rem;
+    }
+    
+    .solution-card p {
+        font-size: 0.85rem;
+    }
+    
     .action-buttons {
         flex-direction: column;
         align-items: center;
     }
     
+    .action-btn {
+        width: 100%;
+        max-width: 250px;
+    }
+    
     .timeline-section h3, .solutions-section h3, .call-to-action h3 {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 70px 10px;
+    }
+    
+    .climate-title {
+        font-size: 24px;
+    }
+    
+    .climate-subtitle {
+        font-size: 14px;
+    }
+    
+    .crisis-card {
+        padding: 15px;
+    }
+    
+    .crisis-image {
+        margin-bottom: 12px;
+        text-align: center;
+    }
+    
+    .crisis-image img {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+    }
+    
+    .crisis-stat {
+        font-size: 18px;
+    }
+    
+    .crisis-title {
+        font-size: 16px;
+    }
+    
+    .crisis-description {
+        font-size: 13px;
+    }
+    
+    .crisis-impact {
+        padding: 20px 15px;
+    }
+    
+    .impact-title {
+        font-size: 18px;
+    }
+    
+    .impact-stat {
+        padding: 10px;
+    }
+    
+    .impact-value {
+        font-size: 14px;
+    }
+    
+    .hope-message {
+        padding: 20px 10px;
+    }
+    
+    .hope-message h3 {
+        font-size: 18px;
+    }
+    
+    .hope-message p {
+        font-size: 13px;
+    }
+    
+    .solution-card {
+        padding: 20px 15px;
+    }
+    
+    .solution-icon img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .solution-card h4 {
+        font-size: 1.1rem;
+    }
+    
+    .solution-card p {
+        font-size: 0.85rem;
+    }
+    
+    .timeline-section h3, .solutions-section h3, .call-to-action h3 {
+        font-size: 1.3rem;
     }
 }

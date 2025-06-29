@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -10,13 +9,15 @@ body {
     line-height: 1.6;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
-    padding: 20px;
     margin: 0;
-    padding-top: 100px;
+}
+
+.main-content {
+    padding-top: 90px;
 }
 
 .campaign {
-    width: 100%;
+    width: calc(100% - 40px);
     max-width: 1200px;
     background: rgba(255, 255, 255, 0.95);
     border-radius: 20px;
@@ -72,6 +73,7 @@ body {
     border-bottom: 1px solid #f3f4f6;
     font-size: 0.9rem;
     vertical-align: middle;
+    color: #374151;
 }
 
 .campaign-table td:nth-child(1) { 
@@ -82,6 +84,7 @@ body {
 .campaign-table td:nth-child(2) { 
     text-align: left;
     padding-left: 20px;
+    color: #374151;
 }
 
 .campaign-table td:nth-child(3) { 
@@ -142,11 +145,8 @@ body {
 }
 
 @media (max-width: 768px) {
-    body { 
-        padding: 10px; 
-        padding-top: 80px;
-    }
     .campaign { 
+        width: calc(100% - 20px);
         padding: 20px; 
         margin-top: 10px;
     }
@@ -205,8 +205,14 @@ body {
 }
 
 .info-icon {
-    font-size: 3rem;
     margin-bottom: 20px;
+    text-align: center;
+}
+
+.info-icon img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
 }
 
 .info-card h4 {
@@ -230,8 +236,9 @@ body {
 
 .step {
     display: flex;
-    align-items: flex-start;
-    gap: 25px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
     background: white;
     padding: 25px 30px;
     border-radius: 15px;
@@ -243,18 +250,9 @@ body {
     transform: translateX(10px);
 }
 
-.step-number {
-    background: linear-gradient(135deg, #10b981, #14b8a6);
-    color: white;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 1.2rem;
-    flex-shrink: 0;
+.step-content {
+    flex: 1;
+    text-align: left;
 }
 
 .step-content h4 {
@@ -267,6 +265,16 @@ body {
 .step-content p {
     color: #6b7280;
     line-height: 1.6;
+}
+
+.step-image {
+    flex-shrink: 0;
+}
+
+.step-image img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
 }
 
 /* 성공 사례 섹션 */
@@ -290,8 +298,14 @@ body {
 }
 
 .story-image {
-    font-size: 3rem;
     margin-bottom: 20px;
+    text-align: center;
+}
+
+.story-image img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
 }
 
 .story-card h4 {
@@ -323,7 +337,7 @@ body {
     font-weight: 500;
 }
 
-/* 동기부여 섹션 */
+/* 동기부여*/
 .motivation-content {
     display: flex;
     gap: 40px;
@@ -383,22 +397,20 @@ body {
     .step {
         flex-direction: column;
         text-align: center;
-        gap: 15px;
+        gap: 20px;
     }
     
-    .step-number {
-        align-self: center;
+    .step-content {
+        text-align: center;
     }
     
     .motivation-content {
         flex-direction: column;
-        text-align: center;
         gap: 30px;
     }
     
     .motivation-stats {
-        flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
     }
     
     .info-section h3, .participation-guide h3, .success-stories h3, .motivation-section h3 {
@@ -407,6 +419,5 @@ body {
     
     .story-stats {
         flex-direction: column;
-        align-items: center;
     }
 }

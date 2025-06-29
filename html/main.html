@@ -23,10 +23,10 @@
                 
                 <nav class="nav">
                     <a href="#" class="nav-link active" id="home">홈</a>
-                    <a href="#" class="nav-link" onclick="loadPage('climate.html')">기후위기란?</a>
-                    <a href="#" class="nav-link" onclick="loadPage('carbon.html')">탄소중립이란?</a>
-                    <a href="#" class="nav-link" onclick="loadPage('personal.html')">개인 실천법</a>
-                    <a href="#" class="nav-link" onclick="loadPage('campain.html')">캠페인 참여</a>
+                    <a href="climate.html" class="nav-link">기후위기란?</a>
+                    <p class="nav-link">탄소중립이란?</p>
+                    <p class="nav-link">개인 실천법</p>
+                    <a href="campain.html" class="nav-link">캠페인 참여</a>
                 </nav>
             </div>
         </div>
@@ -47,8 +47,8 @@
                         </p>
 
                         <div class="main-buttons">
-                            <button class="button btn-primary" onclick="navigateToPage('campaign')">캠페인 참여하기</button>
-                            <button class="button btn-secondary" onclick="navigateToPage('personal-action')">실천법 알아보기</button>
+                            <a href="campain.html" class="button btn-primary">캠페인 참여하기</a>
+                            <a href="personal.html" class="button btn-secondary">실천법 알아보기</a>
                         </div>
 
                         <div class="main-stats">
@@ -90,13 +90,12 @@
                 </div>
             </section>
         </div>
-        <iframe id="contentFrame" src="" width="100%" height="1500vh" style="border:none; display:none;"></iframe>
     </main>
 
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-content">    
                 <div class="footer-section">
                     <p>주소: 대구소프트웨어마이스터고등학교</p>
                     <p>이메일: climateandcarbon@action.kr</p>

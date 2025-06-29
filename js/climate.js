@@ -23,19 +23,17 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+});
 
-    // 해결책 알아보기 버튼 클릭 이벤트
-    const solutionBtn = document.querySelector('.btn-primary');
-    if (solutionBtn) {
-        solutionBtn.addEventListener('click', function() {
-            // 해결방안 섹션으로 부드럽게 스크롤
-            const solutionsSection = document.querySelector('.solutions-section');
-            if (solutionsSection) {
-                solutionsSection.scrollIntoView({ 
-                    behavior: 'smooth',
-                    block: 'center'
-                });
-            }
-        });
+// 페이지 로드 시 메뉴 활성화
+document.addEventListener('DOMContentLoaded', function() {
+    // 모든 메뉴 항목에서 active 클래스 제거
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => link.classList.remove('active'));
+    
+    // 기후위기 메뉴 활성화
+    const climateLink = document.querySelector('.nav-link[href="climate.html"]');
+    if (climateLink) {
+        climateLink.classList.add('active');
     }
 });
