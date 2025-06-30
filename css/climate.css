@@ -188,7 +188,8 @@ body {
     font-weight: 500;
 }
 
-/* div가 제거된 후의 스타일 */
+
+
 .hope-title {
     font-size: 24px;
     color: #ef6c00;
@@ -222,6 +223,8 @@ body {
 .btn-primary:hover {
     background-color: #e65a4a;
 }
+
+
 
 /* 추가 콘텐츠 스타일 */
 .additional-sections {
@@ -355,6 +358,8 @@ body {
     color: #666;
     line-height: 1.6;
 }
+
+
 
 /* 행동 유도 섹션 */
 .call-to-action {
