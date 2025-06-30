@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>기후위기란?</title>
+    <!-- CSS 파일 & 폰트 연결 -->
     <link rel="stylesheet" href="../css/climate.css">
     <link rel="stylesheet" href="../css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- header: 로고 & 네비게이션 -->
     <header class="header">
         <div class="container">
             <div class="header-content">
-
+                <!-- 로고  -->
                 <div class="logo" id="logo">
                     <div class="logo-img">
                         <img src="../images/forest.png" alt="Forest Logo">
@@ -20,6 +22,7 @@
                     <span class="logo-text">초록약속</span>
                 </div> 
                 
+                <!-- 네비게이션 메뉴 -->
                 <nav class="nav">
                     <a href="#" class="nav-link active" id="home">홈</a>
                     <a href="climate.html" class="nav-link">기후위기란?</a>
@@ -31,9 +34,11 @@
         </div>
     </header>
 
+    <!-- 메인 콘텐츠 영역 -->
     <main class="main-content">
         <section class="climate-crisis">
             <div class="container">
+                <!-- 기후위기 소개 header -->
                 <div class="climate-header">
                     <h2 class="climate-title">기후위기란?</h2>
                     <p class="climate-subtitle">
@@ -42,7 +47,9 @@
                     </p>
                 </div>
                 
+                <!-- 기후위기 현황 카드 그리드 -->
                 <div class="crisis-grid">
+                    <!-- 온도 상승 카드 -->
                     <div class="crisis-card" data-color="red">
                         <div class="crisis-image">
                             <img src="../images/high-temperature.png" alt="고온">
@@ -51,6 +58,7 @@
                         <h3 class="crisis-title">급격한 온도 상승</h3>
                         <p class="crisis-description">지구 평균 기온이 산업혁명 이후 1.1°C 상승했으며, 매년 최고 기온 기록을 경신하고 있습니다.</p>
                     </div>
+                    <!-- 해수면 상승 카드 -->
                     <div class="crisis-card" data-color="blue">
                         <div class="crisis-image">
                             <img src="../images/sea-level.png" alt="해수면 상승">
@@ -59,6 +67,7 @@
                         <h3 class="crisis-title">해수면 상승</h3>
                         <p class="crisis-description">북극과 남극의 빙하가 녹으면서 해수면이 지속적으로 상승하여 연안 지역이 위험에 처해있습니다.</p>
                     </div>
+                    <!-- 극한 기후 현상 카드 -->
                     <div class="crisis-card" data-color="orange">
                         <div class="crisis-image">
                             <img src="../images/sun.png" alt="극한 기후">
@@ -67,6 +76,7 @@
                         <h3 class="crisis-title">극한 기후 현상</h3>
                         <p class="crisis-description">폭염, 한파, 가뭄, 홍수 등 극한 기후 현상의 빈도와 강도가 지속적으로 증가하고 있습니다.</p>
                     </div>
+                    <!-- 생태계 파괴 카드 -->
                     <div class="crisis-card" data-color="green">
                         <div class="crisis-image">
                             <img src="../images/planet-earth.png" alt="생태계 파괴">
@@ -77,9 +87,11 @@
                     </div>
                 </div>
 
+                <!-- 기후변화 영향 통계 섹션 -->
                 <div class="crisis-impact">
                     <div class="impact-content">
                         <h3 class="impact-title">기후변화의 현실</h3>
+                        <!-- 주요 통계 정보 -->
                         <div class="impact-stats">
                             <div class="impact-stat">
                                 <span class="impact-label">CO₂ 농도</span>
@@ -99,6 +111,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- 시각적 경고 메시지 -->
                     <div class="impact-visual">
                         <div class="earth-icon">
                             <img src="../images/save1.png" alt="지구 보호">
@@ -107,14 +120,17 @@
                     </div>
                 </div>
 
+                <!-- 희망 메시지 섹션 -->
                 <h3 class="hope-title">하지만 아직 늦지 않았습니다</h3>
                 <p class="hope-text">과학자들은 1.5°C 온도 상승을 막기 위해 2030년까지 온실가스를 45% 줄여야 한다고 말합니다. 지금 행동하면 충분히 가능합니다.</p>
 
                 <!-- 추가 콘텐츠 섹션 -->
                 <div class="additional-sections">
+                    <!-- 기후변화 타임라인 섹션 -->
                     <div class="timeline-section">
                         <h3>기후변화 타임라인</h3>
                         <div class="timeline">
+                            <!-- 타임라인 아이템들 -->
                             <div class="timeline-item">
                                 <div class="timeline-date">1880년</div>
                                 <div class="timeline-content">
@@ -153,9 +169,11 @@
                         </div>
                     </div>
 
+                    <!-- 해결 방안 섹션 -->
                     <div class="solutions-section">
                         <h3>기후위기 해결 방안</h3>
                         <div class="solutions-grid">
+                            <!-- 국제 협력 카드 -->
                             <div class="solution-card">
                                 <div class="solution-icon">
                                     <img src="../images/international.png" alt="국제 협력">
@@ -163,6 +181,7 @@
                                 <h4>국제 협력 강화</h4>
                                 <p>파리협정 이행과 국제 기후 기금 확대를 통해 개발도상국의 기후 대응을 지원하고 전 세계적 협력을 강화합니다.</p>
                             </div>
+                            <!-- 정책 제도 카드 -->
                             <div class="solution-card">
                                 <div class="solution-icon">
                                     <img src="../images/policy1.png" alt="정책 제도">
@@ -170,6 +189,7 @@
                                 <h4>정책 및 제도 개선</h4>
                                 <p>탄소세 도입, 배출권 거래제 확대, 친환경 인증제도 강화를 통해 기후 친화적 정책 환경을 조성합니다.</p>
                             </div>
+                            <!-- 기술 혁신 카드 -->
                             <div class="solution-card">
                                 <div class="solution-icon">
                                     <img src="../images/idea.png" alt="기술 혁신">
@@ -177,6 +197,7 @@
                                 <h4>기술 혁신 투자</h4>
                                 <p>탄소 포집 저장(CCS), 수소 에너지, 차세대 배터리 기술 등 혁신 기술 개발에 대폭 투자합니다.</p>
                             </div>
+                            <!-- 교육 인식 카드 -->
                             <div class="solution-card">
                                 <div class="solution-icon">
                                     <img src="../images/training.png" alt="교육 인식">
@@ -187,6 +208,7 @@
                         </div>
                     </div>
 
+                    <!-- 행동 촉구 섹션 -->
                     <div class="call-to-action">
                         <h3>지금 당신이 할 수 있는 일</h3>
                         <div class="action-buttons">
@@ -199,6 +221,7 @@
         </section>
     </main>
 
+    <!-- footer: 연락처 및 저작권 정보 -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -215,6 +238,7 @@
         </div>
     </footer>
 
+    <!-- JS 파일 연결 -->
     <script src="../js/climate.js"></script>
     <script src="../js/main.js"></script>
 </body>

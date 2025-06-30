@@ -1,22 +1,23 @@
+/* 전체 요소 리셋 */
 * {
     margin: 0;
     padding: 0;
 }
 
-
+/* 기본 body 스타일 */
 body {
     font-family: 'Noto Sans KR', sans-serif;
     color: #333;
     min-height: 100vh;
 }
 
+/* 컨테이너 레이아웃 */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Header */
 .header {
     position: fixed;
     top: 0;
@@ -26,6 +27,7 @@ body {
     z-index: 1000;
 }
 
+/* 헤더 내부 레이아웃 */
 .header-content {
     display: flex;
     justify-content: space-between;
@@ -33,6 +35,7 @@ body {
     height: 70px;
 }
 
+/* 로고 스타일 */
 .logo {
     display: flex;
     align-items: center;
@@ -51,6 +54,7 @@ body {
     color: #1f2937;
 }
 
+/* 네비게이션 메뉴 */
 .nav {
     display: flex;
     gap: 30px;
@@ -70,13 +74,13 @@ body {
     color: #10b981;
 }
 
-/* Main Section */
 main {
   flex: 1 0 auto;
   display: flex;
   flex-direction: column;
 }
 
+/* 메인 섹션 배경 및 스타일 */
 .main-section {
     min-height: 100vh;
     display: flex;
@@ -85,6 +89,7 @@ main {
     padding: 150px 0 60px 0;
 }
 
+/* 메인 콘텐츠 스타일 */
 .main-content {
     text-align: center;
     color: rgba(255, 255, 255, 0.801);
@@ -92,6 +97,7 @@ main {
     animation: fadeInUp 1s ease-out;
 }
 
+/* 페이드인 애니메이션 */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -103,6 +109,7 @@ main {
     }
 }
 
+/* 메인 타이틀 */
 .main-title {
     font-size: 4rem;
     font-weight: 900;
@@ -110,10 +117,12 @@ main {
     line-height: 1.2;
 }
 
+/* 하이라이트 텍스트 */
 .highlight-text{
     color:#ffffff
 }
 
+/* 메인 서브타이틀 */
 .main-subtitle {
     font-size: 1.25rem;
     margin-bottom: 40px;
@@ -123,6 +132,7 @@ main {
     margin-right: auto;
 }
 
+/* 메인 버튼 영역 */
 .main-buttons {
     display: flex;
     gap: 20px;
@@ -131,6 +141,7 @@ main {
     flex-wrap: wrap;
 }
 
+/* 통계 정보 그리드 */
 .main-stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -152,13 +163,14 @@ main {
     font-size: 14px;
 }
 
-
+/* 정보 카드 섹션 */
 .main-cards {
     display: flex;
     gap: 40px;
     padding: 70px 30px;
 }
 
+/* 기후위기 및 탄소중립 카드 공통 스타일 */
 .climate-card, .carbon-card {
     flex: 1 1 0;
     background: #f1fdf7;
@@ -168,11 +180,13 @@ main {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* 카드 호버 효과 */
 .climate-card:hover, .carbon-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 16px 32px rgba(34, 89, 66, 0.15);
 }
 
+/* 카드 제목 */
 .climate-card h2, .carbon-card h2 {
     font-size: 22px;
     margin-bottom: 15px;
@@ -180,12 +194,14 @@ main {
     font-weight: 700;
 }
 
+/* 카드 내용 텍스트 */
 .climate-card p, .carbon-card p {
     font-size: 16px;
     color: #333;
     margin-bottom: 20px;
 }
 
+/* 카드 링크 */
 .climate-card a, .carbon-card a {
     font-size: 15px;
     font-weight: bold;
@@ -197,6 +213,12 @@ main {
     color: #1b5e20;
 }
 
+/* 탄소중립 카드의 "자세히 보기" 밑줄 스타일 */
+.carbon-card a {
+    text-decoration: underline;
+}
+
+/* 카드 이미지 */
 .climate-card img,
 .carbon-card img {
     width: 100%; 
@@ -206,8 +228,6 @@ main {
     margin-bottom: 20px;
 }
 
-
-/* footer */
 .footer {
     background: #1f2937;
     color: white;
@@ -215,16 +235,19 @@ main {
     margin-top: 0;
 }
 
+/* 푸터 콘텐츠 레이아웃 */
 .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin-bottom: 30px;
 }
 
+/* 푸터 텍스트 */
 .footer-section p {
     margin-bottom: 5px;
 }
 
+/* 푸터 하단 영역 */
 .footer-bottom {
     border-top: 1px solid #374151;
     padding-top: 20px;
@@ -233,8 +256,6 @@ main {
 }
 
 
-
-/* button */
 .button {
     padding: 15px 30px;
     border: none;
@@ -246,6 +267,7 @@ main {
     display: inline-block;
 }
 
+/* 주요 버튼 스타일 */
 .btn-primary {
     background: linear-gradient(45deg, #10b981, #14b8a6);
     color: white;
@@ -256,6 +278,7 @@ main {
     box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
 }
 
+/* 보조 버튼 스타일 */
 .btn-secondary {
     background: rgba(255, 255, 255, 0.1);
     color: white;
@@ -267,14 +290,7 @@ main {
     box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
 }
 
-iframe {
-    width: 100%;
-    border: none;
-    height: 242vh;
-    overflow: hidden;
-}
-
-/* 반응형 디자인 */
+/* 반응형 - 태블릿 */
 @media (max-width: 1024px) {
     .main-title {
         font-size: 3rem;
@@ -291,6 +307,7 @@ iframe {
     }
 }
 
+/* 반응형 - 모바일 */
 @media (max-width: 768px) {
     .container {
         padding: 0 15px;
@@ -360,61 +377,5 @@ iframe {
     
     .climate-card img, .carbon-card img {
         height: 150px;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo-text {
-        font-size: 16px;
-    }
-    
-    .nav {
-        gap: 10px;
-    }
-    
-    .nav-link {
-        font-size: 13px;
-    }
-    
-    .main-title {
-        font-size: 2rem;
-    }
-    
-    .main-subtitle {
-        font-size: 1rem;
-    }
-    
-    .main-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .button {
-        width: 100%;
-        max-width: 250px;
-    }
-    
-    .stat-number {
-        font-size: 1.8rem;
-    }
-    
-    .stat-label {
-        font-size: 12px;
-    }
-    
-    .climate-card, .carbon-card {
-        padding: 20px 15px;
-    }
-    
-    .climate-card h2, .carbon-card h2 {
-        font-size: 18px;
-    }
-    
-    .climate-card p, .carbon-card p {
-        font-size: 13px;
-    }
-    
-    .climate-card img, .carbon-card img {
-        height: 120px;
     }
 }
