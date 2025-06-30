@@ -9,19 +9,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- header -->
   <header class="header">
     <div class="container">
         <div class="header-content">
 
             <div class="logo" id="logo">
                 <div class="logo-img">
+                    <!-- 로고 클릭 시 메인 페이지 이동 -->
                     <img src="../images/forest.png" alt="Forest Logo">
                 </div>
                 <span class="logo-text">초록약속</span>
             </div> 
             
             <nav class="nav">
-                <a href="#" class="nav-link" id="home">홈</a>
+                <!-- 5개 이상 메뉴, 2개 이상 페이지 이동 -->
+                <a href="main.html" class="nav-link" id="home">홈</a>
                 <a href="climate.html" class="nav-link">기후위기란?</a>
                 <p class="nav-link">탄소중립이란?</p>
                 <p class="nav-link">개인 실천법</p>
@@ -35,6 +38,7 @@
     <div class="campaign">
       <h3 class="methods-title">캠페인 일정</h3>
       <div class="table-container">
+        <!-- 표(테이블) 요소 -->
         <table class="campaign-table">
           <thead>
             <tr>
@@ -86,12 +90,14 @@
       </div>
 
       <div class="campaign-apply">
+        <!-- 신청 폼으로 가는 버튼-->
         <button id="applyBtn">캠페인 신청하기</button>
       </div>
 
       <div class="campaign-info">
         <div class="info-section">
           <h3>캠페인 참여의 중요성</h3>
+          <!-- grid 레이아웃, 카드형 정보, 이미지 포함 -->
           <div class="info-grid">
             <div class="info-card">
               <div class="info-icon">
@@ -119,6 +125,7 @@
 
         <div class="participation-guide">
           <h3>캠페인 참여 가이드</h3>
+          <!-- 목록(ol, li)과 flex 활용, 각 단계별 이미지 포함 -->
           <ol class="guide-steps">
             <li class="step">
               <div class="step-content">
@@ -161,6 +168,7 @@
 
         <div class="success-stories">
           <h3>성공 사례</h3>
+          <!-- grid 레이아웃, 카드형 성공사례, 이미지 포함 -->
           <div class="stories-grid">
             <div class="story-card">
               <div class="story-image">
@@ -200,6 +208,7 @@
 
         <div class="motivation-section">
           <h3>지금 행동해야 하는 이유</h3>
+          <!-- flex 레이아웃, 동기부여 문구와 통계 -->
           <div class="motivation-content">
             <div class="motivation-text">
               <p>"기후변화는 우리 모두의 문제입니다. 하지만 함께 행동하면 충분히 해결할 수 있습니다. 지금 당신의 작은 행동이 미래의 큰 변화를 만들어냅니다."</p>
@@ -225,6 +234,7 @@
     </div>
   </main>
 
+  <!-- footer: 저작권, 연락처, 개인정보처리방침 등 포함 -->
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
@@ -241,6 +251,7 @@
     </div>
   </footer>
 
+  <!-- 자바스크립트: 팝업, 이벤트, 함수 등 활용 -->
   <script src="../js/campain.js"></script>
   <script src="../js/main.js"></script>
 </body>
