@@ -70,17 +70,6 @@ body {
     color: #10b981;
 }
 
-/* .nav-link.active::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: #10b981;
-} */
-
-
 /* Main Section */
 main {
   flex: 1 0 auto;
