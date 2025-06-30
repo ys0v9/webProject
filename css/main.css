@@ -93,7 +93,7 @@ main {
     display: flex;
     align-items: center;
     background: linear-gradient(#68bda7, #5db79e, #489d85);
-    padding: 100px 0 60px 0;
+    padding: 150px 0 60px 0;
 }
 
 .main-content {

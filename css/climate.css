@@ -19,7 +19,7 @@ body {
     display: flex;
     align-items: center;
     background: linear-gradient(#fff6b2, #ffde83, #ffa561);
-    padding: 100px 0 60px 0;
+    padding: 150px 0 60px 0;
 }
 
 @keyframes fadeInUp {
@@ -155,7 +155,7 @@ body {
 }
 
 .impact-value {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     display: block;
     margin-top: 6px;
@@ -188,25 +188,21 @@ body {
     font-weight: 500;
 }
 
-.hope-message {
-    text-align: center;
-    background-color: #fff3e0;
-    padding: 32px 20px;
-    border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-    animation: fadeInUp 1s ease-out 0.6s both;
-}
-
-.hope-message h3 {
+/* div가 제거된 후의 스타일 */
+.hope-title {
     font-size: 24px;
     color: #ef6c00;
     margin-bottom: 16px;
+    text-align: center;
+    font-weight: 700;
 }
 
-.hope-message p {
+.hope-text {
     font-size: 16px;
     margin-bottom: 20px;
     color: #444;
+    text-align: center;
+    line-height: 1.6;
 }
 
 .button {
@@ -254,12 +250,11 @@ body {
 .timeline::before {
     content: '';
     position: absolute;
-    left: 50%;
+    left: 20px;
     top: 0;
     bottom: 0;
     width: 4px;
     background: linear-gradient(to bottom, #ff5500, #ffa561);
-    transform: translateX(-50%);
 }
 
 .timeline-item {
@@ -496,18 +491,6 @@ body {
         font-size: 16px;
     }
     
-    .hope-message {
-        padding: 25px 15px;
-    }
-    
-    .hope-message h3 {
-        font-size: 20px;
-    }
-    
-    .hope-message p {
-        font-size: 14px;
-    }
-    
     .timeline::before {
         left: 20px;
     }
@@ -620,18 +603,6 @@ body {
     
     .impact-value {
         font-size: 14px;
-    }
-    
-    .hope-message {
-        padding: 20px 10px;
-    }
-    
-    .hope-message h3 {
-        font-size: 18px;
-    }
-    
-    .hope-message p {
-        font-size: 13px;
     }
     
     .solution-card {
